@@ -1,0 +1,6 @@
+/home/richard/C++/ColoredCube/build/CMakeFiles/rebuild_cache.dir
+/home/richard/C++/ColoredCube/build/CMakeFiles/ColoredCube.dir
+/home/richard/C++/ColoredCube/build/CMakeFiles/edit_cache.dir
+/home/richard/C++/ColoredCube/build/src/CMakeFiles/rebuild_cache.dir
+/home/richard/C++/ColoredCube/build/src/CMakeFiles/src.dir
+/home/richard/C++/ColoredCube/build/src/CMakeFiles/edit_cache.dir

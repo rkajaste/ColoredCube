@@ -3,21 +3,21 @@
 #include <stdlib.h>
 #include <GL/glew.h>
 
-#include <glfw3.h>
+#include <GLFW/glfw3.h>
 GLFWwindow* window;
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 using namespace glm;
 
-#include <common/shader.hpp>
-#include <common/controls.hpp>
+#include "./src/shader.h"
+#include "./src/controls.h"
 
 GLfloat *changeColors(GLfloat *arr) {
 	int count = 0;
 	for (int i = 0; i < 9*12; i++) {
 		count++;
-		if (count == 1) {
+		if (count == 3) {
 			arr[i] -= 0.01f;
 			if (arr[i] <= 0.0f) {
 				arr[i] = 1.0f;
@@ -80,12 +80,12 @@ int main( void )
 	glBindVertexArray(VertexArrayID);
 
 	// Create and compile GLSL program from the shaders
-	GLuint programID = LoadShaders( "TransformVertexShader.vertexshader", "ColorFragmentShader.fragmentshader" );
+	GLuint programID = LoadShaders( "TransformVertexShader.glsl", "ColorFragmentShader.glsl" );
 
 	// Get a handle for our "MVP" uniform
 	GLuint MatrixID = glGetUniformLocation(programID, "MVP");
 
-	// Projection matrix - 45° Field of View, 4:3 ratio, display range = 0.1 unit <-> 100 units
+	// Projection matrix - 45ï¿½ Field of View, 4:3 ratio, display range = 0.1 unit <-> 100 units
 	glm::mat4 Projection = glm::perspective(glm::radians(45.0f), 4.0f / 3.0f, 0.1f, 100.0f);
 
 	// Camera matrix

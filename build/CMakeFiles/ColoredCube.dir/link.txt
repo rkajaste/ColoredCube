@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/ColoredCube.dir/main.cpp.o  -o ColoredCube -lGL -lGLEW -lglfw src/libsrc.a 

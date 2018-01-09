@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/richard/C++/ColoredCube/src/controls.cpp
+GLFW/glfw3.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+controls.h
+/home/richard/C++/ColoredCube/src/controls.h
+
+/home/richard/C++/ColoredCube/src/controls.h
+
+/home/richard/C++/ColoredCube/src/shader.cpp
+stdio.h
+-
+string
+-
+vector
+-
+iostream
+-
+fstream
+-
+algorithm
+-
+sstream
+-
+stdlib.h
+-
+string.h
+-
+GL/glew.h
+-
+shader.h
+/home/richard/C++/ColoredCube/src/shader.h
+
+/home/richard/C++/ColoredCube/src/shader.h
+

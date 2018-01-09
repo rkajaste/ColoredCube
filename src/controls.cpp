@@ -1,4 +1,4 @@
-#include <glfw3.h>
+#include <GLFW/glfw3.h>
 extern GLFWwindow* window;
 
 #include <glm/glm.hpp>
